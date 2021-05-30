@@ -13,6 +13,7 @@ body {
   padding: 8px 16px;
   position: fixed;
   z-index: 2;
+  top: 0;
 }
 
 .main-header > div {
@@ -38,6 +39,8 @@ body {
   text-align: right;
   width: calc(100% - 74px);
   vertical-align: middle;
+  position: fixed;
+  margin: 0;
 }
 
 .main-nav__items {
