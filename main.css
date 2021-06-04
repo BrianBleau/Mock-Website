@@ -172,9 +172,11 @@ button {
 }
 
 .modal {
+  opacity: 0;
+  transform: translateY(-3rem);
   position: fixed;
-  display: none;
   z-index: 200;
+  transition: opacity 200ms ease-out, transform 500ms ease-out;
   top: 20%;
   left: 30%;
   width: 40%;

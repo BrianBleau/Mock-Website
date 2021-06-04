@@ -25,6 +25,7 @@ main {
 .package:active {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-color: #ff5454;
+  animation: push 1s ease-out forwards;
 }
 
 #free:hover {
@@ -113,5 +114,17 @@ main {
   }
   #free:hover {
     border-right-color: #ff5454;
+  }
+}
+
+@keyframes push {
+  0% {
+    transform: translateY(0);
+  }
+  33% {
+    transform: translateY(-1.5rem);
+  }
+  100% {
+    transform: translateY(-1rem);
   }
 }
